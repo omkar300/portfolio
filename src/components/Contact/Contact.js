@@ -8,18 +8,25 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_9ghd3wq', 'template_5n8j199', form.current, 'dKUYHeDGZUm32wqIv')
-      .then((result) => {
+    emailjs.sendForm(
+      'service_9ghd3wq',             // your EmailJS service ID
+      'template_5n8j199',            // your EmailJS template ID
+      form.current,
+      'dKUYHeDGZUm32wqIv'            // your public key
+    ).then(
+      (result) => {
         console.log(result.text);
         e.target.reset();
         alert('Message sent successfully!');
-      }, (error) => {
+      },
+      (error) => {
         console.log(error.text);
         alert('Failed to send message, try again!');
-      });
+      }
+    );
   };
 
-  // Use PUBLIC_URL to correctly reference images in GitHub Pages
+  // Image paths from public folder
   const instagramImg = `${process.env.PUBLIC_URL}/instagram.jpeg`;
   const linkedinImg = `${process.env.PUBLIC_URL}/linkedin.png`;
   const githubImg = `${process.env.PUBLIC_URL}/github.png`;
@@ -28,7 +35,7 @@ const Contact = () => {
     <div className="contact" id="contact">
       <h2 className="contact-title">Contact Me</h2>
       <p className="contact-subtitle">Feel free to reach out by filling the form below.</p>
-      
+
       <form ref={form} onSubmit={sendEmail} className="contact-form">
         <input type="text" name="from_name" placeholder="Your Name" className="form-input" required />
         <input type="email" name="from_email" placeholder="Your Email" className="form-input" required />
