@@ -1,11 +1,11 @@
-/* Section wrapper */
+/* Background wrapper */
 .about-section {
   padding: 60px 20px;
-  background-color: #f8fafc; /* Soft background */
-  color: #0f172a; /* Dark slate text */
+  background: url('/your-background.jpg') no-repeat center center / cover;
+  color: #0f172a;
 }
 
-/* Centered content box */
+/* White container box */
 .about-container {
   max-width: 900px;
   margin: 0 auto;
@@ -13,6 +13,9 @@
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow-wrap: break-word; /* Prevent long words from overflowing */
+  word-break: break-word;
+  box-sizing: border-box;
 }
 
 /* Heading */
@@ -31,10 +34,11 @@
   text-align: justify;
 }
 
-/* Responsive styles */
+/* Tablet view */
 @media (max-width: 768px) {
   .about-container {
     padding: 20px;
+    margin: 0 10px;
   }
 
   .about-container h2 {
@@ -46,13 +50,15 @@
   }
 }
 
+/* Mobile view */
 @media (max-width: 480px) {
   .about-container {
-    padding: 15px;
+    padding: 16px;
+    margin: 0 10px;
   }
 
   .about-container h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .about-container p {
