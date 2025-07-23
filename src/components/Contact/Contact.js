@@ -19,6 +19,11 @@ const Contact = () => {
       });
   };
 
+  // Use PUBLIC_URL to correctly reference images in GitHub Pages
+  const instagramImg = `${process.env.PUBLIC_URL}/instagram.jpeg`;
+  const linkedinImg = `${process.env.PUBLIC_URL}/linkedin.png`;
+  const githubImg = `${process.env.PUBLIC_URL}/github.png`;
+
   return (
     <div className="contact" id="contact">
       <h2 className="contact-title">Contact Me</h2>
@@ -32,21 +37,18 @@ const Contact = () => {
         <button type="submit" className="submit-button">Send</button>
       </form>
 
-
       <div className="links">
-    <a href="https://www.instagram.com/eng.omkar" target="_blank" rel="noopener noreferrer">
-        <img src="/instagram.jpeg" alt="Instagram" className="link" />
-    </a>
-    <a href="https://www.linkedin.com/in/omkar-naiknavare-b21815239/" target="_blank" rel="noopener noreferrer">
-        <img src="/linkedin.png" alt="LinkedIn" className="link" />
-    </a>
-    <a href="https://github.com/omkar300" target="_blank" rel="noopener noreferrer">
-        <img src="/github.png" alt="GitHub" className="link" />
-    </a>
-</div>
-
+        <a href="https://www.instagram.com/eng.omkar" target="_blank" rel="noopener noreferrer">
+          <img src={instagramImg} alt="Instagram" className="link" />
+        </a>
+        <a href="https://www.linkedin.com/in/omkar-naiknavare-b21815239/" target="_blank" rel="noopener noreferrer">
+          <img src={linkedinImg} alt="LinkedIn" className="link" />
+        </a>
+        <a href="https://github.com/omkar300" target="_blank" rel="noopener noreferrer">
+          <img src={githubImg} alt="GitHub" className="link" />
+        </a>
+      </div>
     </div>
-    
   );
 };
 
