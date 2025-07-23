@@ -1,3 +1,70 @@
+/* Main about section */
+.about {
+  padding: 60px 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container with left and right */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 40px;
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+/* Left text section */
+.about-left {
+  flex: 1;
+  padding-right: 30px;
+}
+
+/* Heading */
+.about-title {
+  font-size: 32px;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+/* Paragraphs */
+.about-description {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  color: #0f172a;
+  text-align: justify;
+}
+
+/* Right section (image + name) */
+.about-right {
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.about-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
+}
+
+.about-name {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
 /* ✅ Responsive fix for smaller screens */
 @media screen and (max-width: 768px) {
   .about {
@@ -33,11 +100,25 @@
   }
 
   .about-image {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
 
   .about-name {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .about-container {
+    padding: 1rem;
+  }
+
+  .about-title {
+    font-size: 1.6rem;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
   }
 }
