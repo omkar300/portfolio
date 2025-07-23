@@ -60,6 +60,9 @@
   color: #201b1b;
   text-shadow: #ffffff;
   transition: transform 0.3s ease;
+  word-wrap: break-word;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .about-description:hover {
@@ -83,13 +86,12 @@
   border-radius: 50%;
   border: 5px solid #ffffff;
   background-color: rgb(22, 104, 140);
-  object-fit: cover;
-  object-position: center top; /* ✅ Center horizontally, top vertically */
+  object-fit: contain;            /* ✅ Shows full image */
+  object-position: center;        /* ✅ Keeps image centered */
   margin-top: 0;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 }
-
 
 .about-image:hover {
   transform: scale(1.03);
@@ -111,7 +113,7 @@
   color: #000000;
 }
 
-/* ✅ Fully Responsive Fixes */
+/* ✅ Responsive: Tablets and below */
 @media screen and (max-width: 768px) {
   .about {
     padding: 1rem;
@@ -134,8 +136,9 @@
   }
 
   .about-description {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     line-height: 1.7;
+    margin-bottom: 0.8rem;
   }
 
   .about-right {
@@ -152,6 +155,7 @@
   }
 }
 
+/* ✅ Responsive: Phones and small screens */
 @media screen and (max-width: 480px) {
   .about-container {
     padding: 1rem 0.5rem;
@@ -162,7 +166,8 @@
   }
 
   .about-description {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 
   .about-image {
