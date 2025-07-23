@@ -1,18 +1,15 @@
 /* Section wrapper */
 .about-section {
   padding: 60px 20px;
-  background-color: #f8fafc;
-  color: #0f172a;
-  width: 100%;
-  overflow-x: hidden; /* Prevents horizontal scroll */
+  background-color: #f8fafc; /* Soft background */
+  color: #0f172a; /* Dark slate text */
 }
 
-/* Container box */
+/* Centered content box */
 .about-container {
   max-width: 900px;
-  width: 100%;
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: 30px 40px;
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -24,7 +21,6 @@
   margin-bottom: 20px;
   color: #1e293b;
   text-align: center;
-  word-break: break-word;
 }
 
 /* Paragraphs */
@@ -33,11 +29,9 @@
   line-height: 1.7;
   margin-bottom: 16px;
   text-align: justify;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
 }
 
-/* Tablet view */
+/* Responsive styles */
 @media (max-width: 768px) {
   .about-container {
     padding: 20px;
@@ -52,14 +46,13 @@
   }
 }
 
-/* Mobile view */
 @media (max-width: 480px) {
   .about-container {
     padding: 15px;
   }
 
   .about-container h2 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .about-container p {
