@@ -83,7 +83,7 @@
   border-radius: 50%;
   border: 5px solid #ffffff;
   background-color: rgb(22, 104, 140);
-  object-fit: contain;
+  object-fit: cover;            /* ✅ Fills circular frame */
   object-position: center;
   margin-top: 0;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
