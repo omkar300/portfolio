@@ -1,31 +1,34 @@
-/* ✅ Responsive fix for smaller screens */
 @media screen and (max-width: 768px) {
   .about {
-    padding: 1rem;
+    padding: 1rem 0.5rem;
     min-height: auto;
   }
 
   .about-container {
     flex-direction: column;
-    padding: 1.2rem;
-    text-align: center;
-    gap: 1.5rem;
+    padding: 1rem 1rem;
+    gap: 1rem;
+    border-radius: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .about-left {
-    padding-right: 0;
     text-align: center;
+    padding: 0;
   }
 
   .about-title {
-    font-size: 2rem;
-    margin-bottom: 0.8rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
 
   .about-description {
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.5;
+    word-wrap: break-word;
     margin-bottom: 0.8rem;
+    padding: 0 0.5rem;
   }
 
   .about-right {
@@ -33,11 +36,11 @@
   }
 
   .about-image {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
 
   .about-name {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
