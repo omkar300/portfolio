@@ -1,0 +1,71 @@
+/* Apply Poppins font globally for navbar */
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1e293b; /* Dark slate */
+  padding: 10px 50px;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Left: Brand */
+.navbar-left .brand-name {
+  color: whitesmoke;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Center: Navigation links */
+.navbar-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Link style */
+.navbar-links li a {
+  position: relative;
+  text-decoration: none;
+  color: #f1f5f9; /* Light gray */
+  font-size: 18.5px;
+  font-weight: 500;
+  padding: 6px 10px;
+  transition: color 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+/* Underline hover animation */
+.navbar-links li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #38bdf8; /* Sky blue */
+  transition: width 0.3s ease;
+}
+
+/* Hover effect: color + underline */
+.navbar-links li a:hover {
+  color: #38bdf8;
+}
+
+.navbar-links li a:hover::after {
+  width: 100%;
+}

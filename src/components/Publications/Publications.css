@@ -1,0 +1,59 @@
+.publications {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  color: #1e293b;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.publications-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.publications-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #0f172a;
+  border-bottom: 2px solid #38bdf8;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.publication-entry {
+  background-color: #f8fafc;
+  border-left: 4px solid #38bdf8;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.publication-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.publication-name {
+  color: #0c4a6e;
+}
+
+.publication-date {
+  color: #64748b;
+  font-size: 16px;
+}
+
+.publication-journal {
+  font-weight: 500;
+  color: #475569;
+  margin-bottom: 10px;
+}
+
+.publication-description {
+  font-size: 16px;
+  color: #334155;
+  line-height: 1.6;
+}

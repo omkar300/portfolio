@@ -1,0 +1,39 @@
+.careergoals {
+  padding: 60px 20px;
+  background-color: #f9fafb;
+  color: #1f2937;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: left;
+}
+
+.careergoals-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.careergoals-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #0f172a;
+  border-bottom: 2px solid #38bdf8;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.goal-section {
+  margin-bottom: 30px;
+}
+
+.goal-heading {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0c4a6e;
+  margin-bottom: 10px;
+}
+
+.goal-text {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #374151;
+}
