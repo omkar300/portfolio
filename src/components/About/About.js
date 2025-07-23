@@ -7,7 +7,7 @@ function About() {
       className="about"
       id="about"
       style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL}/Data-Science.png)`,
+        backgroundImage: "url('/portfolio/Data-Science.png')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -28,7 +28,7 @@ function About() {
         </div>
 
         <div className="about-right">
-          <img src={`${process.env.PUBLIC_URL}/myimage.png`} alt="Omkar Naiknavare" className="about-image" />
+          <img src="/portfolio/myimage.png" alt="Omkar Naiknavare" className="about-image" />
           <h3 className="about-name">Omkar Naiknavare</h3>
         </div>
       </div>
