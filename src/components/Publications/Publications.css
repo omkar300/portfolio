@@ -32,9 +32,11 @@
 .publication-header {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap; /* Ensures no overflow on small screens */
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 10px;
+  gap: 10px;
 }
 
 .publication-name {
@@ -44,6 +46,7 @@
 .publication-date {
   color: #64748b;
   font-size: 16px;
+  text-align: right;
 }
 
 .publication-journal {
@@ -56,4 +59,26 @@
   font-size: 16px;
   color: #334155;
   line-height: 1.6;
+}
+
+/* ✅ Responsive tweaks */
+@media (max-width: 600px) {
+  .publications-title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .publication-header {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 16px;
+  }
+
+  .publication-date {
+    font-size: 14px;
+  }
+
+  .publication-description {
+    font-size: 15px;
+  }
 }

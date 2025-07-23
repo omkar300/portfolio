@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   min-height: 90vh;
-  background-color: rgba(255, 255, 255, 0.9); /* Fallback color */
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .about-container {
@@ -19,10 +19,45 @@
   width: 100%;
   gap: 2rem;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.75); /* Overlay box effect */
+  background-color: rgba(255, 255, 255, 0.75);
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Responsive fix for smaller screens */
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .about-left {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .about-right {
+    margin-top: 1.5rem;
+  }
+
+  .about-image {
+    width: 220px;
+    height: 220px;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-description {
+    font-size: 1.1rem;
+  }
+
+  .about-name {
+    font-size: 1.7rem;
+  }
 }
 
 .about-left {
@@ -33,21 +68,17 @@
 }
 
 .about-title {
-  font-style:serif;
+  font-style: serif;
   font-size: 2.7rem;
   font-weight: bold;
   margin-bottom: 1rem;
   text-transform: uppercase;
-  color: #0f0d0d; 
+  color: #0f0d0d;
   box-shadow: #201b1b;
-  
 }
 
-
-
-.about-title:hover
-{
-   transform: scale(1.02);
+.about-title:hover {
+  transform: scale(1.02);
   color: #000000;
 }
 
@@ -60,10 +91,12 @@
   color: #201b1b;
   text-shadow: #ffffff;
 }
-.about-description:hover{
+
+.about-description:hover {
   transform: scale(1.02);
   color: #26177c;
 }
+
 .about-right {
   flex: 0.8;
   min-width: 280px;
@@ -79,13 +112,12 @@
   border-radius: 50%;
   border: 5px solid #ffffff;
   background-color: rgb(22, 104, 140);
-  object-fit: contain; /* Shows full image */
+  object-fit: contain;
   object-position: center;
   margin-top: 0;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 }
-
 
 .about-image:hover {
   transform: scale(1.03);

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hobbies.css';
 
-function Hobbies() {
+const Hobbies = () => {
   return (
     <section className="hobbies" id="hobbies">
       <div className="hobbies-container">
@@ -16,6 +16,6 @@ function Hobbies() {
       </div>
     </section>
   );
-}
+};
 
 export default Hobbies;

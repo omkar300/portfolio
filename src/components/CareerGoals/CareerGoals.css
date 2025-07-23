@@ -37,3 +37,24 @@
   line-height: 1.8;
   color: #374151;
 }
+
+/* ✅ Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .careergoals {
+    padding: 40px 15px;
+    text-align: center;
+  }
+
+  .careergoals-title {
+    font-size: 28px;
+  }
+
+  .goal-heading {
+    font-size: 20px;
+  }
+
+  .goal-text {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+}
