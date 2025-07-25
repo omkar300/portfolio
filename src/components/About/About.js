@@ -17,13 +17,15 @@ function About() {
         <div className="about-left">
           <h2 className="about-title">About Me</h2>
           <p className="about-description">
-            A motivated Computer Engineering graduate from AISSMS IOIT with a strong interest in Data Science, Machine Learning, and Artificial Intelligence.
+            A motivated Computer Engineering graduate from AISSMS IOIT with a strong interest in Data Science, Machine
+            Learning, and Artificial Intelligence. Proficient in Python, SQL, and React.js, with hands-on experience in building
+            interactive and responsive web applications.
           </p>
           <p className="about-description">
-            Proficient in Python, SQL, and core data analysis techniques. Skilled in data visualization and model building using Pandas, Seaborn, and Matplotlib.
+            Skilled in core data analysis techniques, as well as data visualization and model building using Pandas, Seaborn, and Matplotlib.
           </p>
           <p className="about-description">
-            Eager to contribute analytical thinking and technical skills to solve real-world problems in a data-driven organization.
+            Eager to contribute analytical thinking, full-stack development skills, and technical expertise to solve real-world problems in a data-driven organization.
           </p>
         </div>
 
