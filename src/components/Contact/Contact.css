@@ -64,21 +64,47 @@
 .submit-button:hover {
   background-color: #45a049;
 }
+
 .links {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1.5rem;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .link {
-    width: 2.5rem;
-    height: 2.5rem;
-    cursor: pointer;
-    transition: transform 0.2s ease;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
 .link:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* ✅ Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 1.5rem 1rem;
+  }
+
+  .contact-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+
+  .link {
+    width: 2rem;
+    height: 2rem;
+  }
 }

@@ -9,19 +9,19 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_9ghd3wq',             // your EmailJS service ID
-      'template_5n8j199',            // your EmailJS template ID
+      'service_9ghd3wq',             // EmailJS service ID
+      'template_5n8j199',            // EmailJS template ID
       form.current,
-      'dKUYHeDGZUm32wqIv'            // your public key
+      'dKUYHeDGZUm32wqIv'            // EmailJS public key
     ).then(
       (result) => {
         console.log(result.text);
         e.target.reset();
-        alert('Message sent successfully!');
+        alert('mail sent successfully!');
       },
       (error) => {
         console.log(error.text);
-        alert('Failed to send message, try again!');
+        alert('Failed to send mail, try again!');
       }
     );
   };
@@ -32,9 +32,9 @@ const Contact = () => {
       <p className="contact-subtitle">Feel free to reach out by filling the form below.</p>
 
       <form ref={form} onSubmit={sendEmail} className="contact-form">
-        <input type="text" name="from_name" placeholder="Your Name" className="form-input" required />
-        <input type="email" name="from_email" placeholder="Your Email" className="form-input" required />
-        <input type="tel" name="from_number" placeholder="Your Phone Number" className="form-input" required />
+        <input type="text" name="name" placeholder="Your Name" className="form-input" required />
+        <input type="email" name="email" placeholder="Your Email" className="form-input" required />
+        <input type="tel" name="phone" placeholder="Your Phone Number" className="form-input" required />
         <textarea name="message" rows="6" placeholder="Your Message" className="form-textarea" required></textarea>
         <button type="submit" className="submit-button">Send</button>
       </form>

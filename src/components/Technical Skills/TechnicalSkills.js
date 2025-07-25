@@ -12,7 +12,7 @@ function TechnicalSkills() {
           <li><span className="skill-bold">Machine Learning:</span> Knowledge of data preparation and model building</li>
           <li><span className="skill-bold">Databases:</span> MySQL, MongoDB, SQLite, data modeling, querying, and management</li>
           <li><span className="skill-bold">Tools & Platforms:</span> Jupyter Notebook, Google Colab, VS Code, Git, GitHub</li>
-          <li><span className="skill-bold">Web Technologies:</span> HTML, CSS, JavaScript, Node.js (used in blockchain project)</li>
+          <li><span className="skill-bold">Web Technologies:</span> HTML, CSS, JavaScript, React.js, Node.js (used in blockchain project)</li>
           <li><span className="skill-bold">Operating Systems:</span> Windows, Linux (Ubuntu), command-line tools</li>
           <li><span className="skill-bold">Concepts:</span> Supervised/Unsupervised Learning, Data Preprocessing, Feature Engineering, Model Deployment</li>
         </ul>
