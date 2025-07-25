@@ -12,12 +12,10 @@ function Experience() {
             <span className="position">Web Development Intern:</span>
             <span className="company-date">NoQs Digital | Jan 2024 – Feb 2024</span>
           </div>
-          <ul className="experience-details">
-            <li>Learned the basics of building, designing, and deploying web pages.</li>
-            <li>Gained hands-on experience with HTML, CSS, and JavaScript.</li>
-            <li>Designed simple user interfaces and practiced creating responsive layouts.</li>
-            <li>Understood the process of deploying websites and maintaining basic frontend code.</li>
-          </ul>
+          <p className="experience-summary">
+            Learned to design, develop, and deploy responsive web pages using HTML, CSS, and JavaScript. 
+            Gained practical experience in frontend development and basic website deployment.
+          </p>
         </div>
       </div>
     </section>
